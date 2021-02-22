@@ -18,7 +18,7 @@ function generateNoteDom(note) {
     titleEl.textContent = note.title 
     titleEl.classList.add('list-item__title')
     noteEl.appendChild(titleEl)
-    
+
     return noteEl
 }
 
@@ -29,5 +29,7 @@ function renderNotes (notes) {
     notes.forEach(function(note) {
         const noteEl = generateNoteDom(note)
         notesEl.appendChild(noteEl)
-    });
+    }); 
+
+    console.log(notes)
 }

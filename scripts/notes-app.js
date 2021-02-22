@@ -7,7 +7,7 @@ document.querySelector('button#add-note').addEventListener('click', function(e) 
 
     notes.push({
         id: id,
-        title : '',
+        title : 'Unnamed',
         body: '', 
     })  
 
