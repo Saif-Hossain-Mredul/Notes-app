@@ -1,3 +1,13 @@
+function getNotes() {
+    const notes = JSON.parse(localStorage.getItem('notes'))  
+   
+    return notes === null ? [] : notes
+}
+
+function saveNotes(notes) {
+    localStorage.setItem('notes', JSON.stringify(notes))
+}
+
 function generateNoteDom(note) {
     const noteEl = document.createElement('a')
     const titleEl = document.createElement('p') 

@@ -1,4 +1,6 @@
-let notes = []
+let notes = getNotes() 
+
+renderNotes(notes)
 
 document.querySelector('button#add-note').addEventListener('click', function(e) {
     const id = uuidv4()
@@ -7,9 +9,10 @@ document.querySelector('button#add-note').addEventListener('click', function(e) 
         id: id,
         title : 'new note',
         body: '', 
-    }) 
+    })  
 
-    console.log(notes)
+    saveNotes(notes)
+    location.assign(`edit-page.html#${id}`)
 
     renderNotes(notes)
 })
