@@ -14,7 +14,6 @@ let noteIndex = notes.findIndex((note) => {
     return note.id === noteId
 })
 
-titleEl.value = note.title
 titleEl.addEventListener('input', (e) => { 
     note.title = e.target.value.trim()
 })
