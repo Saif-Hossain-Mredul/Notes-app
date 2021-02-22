@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit</title>
-</head>
-<body>
-    <header>
-        <h1>Edit note</h1>
-    </header> 
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Edit</title>
+	</head>
+	<body>
+		<header>
+			<h1>Edit note</h1>
+		</header>
 
-    <section class="edit-body"></section>
-</body>
+		<section class="edit-body">
+			<input
+				type="text"
+				id="note-title"
+				class="title-input"
+				placeholder="Title"
+			/>
+			<br />
+			<textarea
+				id=""
+				cols="30"
+				rows="10"
+				id="note-body"
+				class="body-input"
+				placeholder="Note body"
+            ></textarea> 
+            <br> 
+            <button id="save-button" class="save-button">Save Note</button>
+            <button id="remove-button" class="remove-button">Remove Note</button>
+        </section>
+	</body>
 </html>

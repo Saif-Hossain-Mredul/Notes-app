@@ -13,6 +13,4 @@ document.querySelector('button#add-note').addEventListener('click', function(e) 
 
     saveNotes(notes)
     location.assign(`edit-page.html#${id}`)
-
-    renderNotes(notes)
 })
