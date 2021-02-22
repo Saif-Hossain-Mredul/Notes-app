@@ -12,6 +12,7 @@ function generateNoteDom(note) {
 function renderNotes (notes) {
     const notesEl = document.querySelector('div#notes')
 
+    notesEl.innerHTML = ''
     notes.forEach(function(note) {
         const noteEl = generateNoteDom(note)
         notesEl.appendChild(noteEl)

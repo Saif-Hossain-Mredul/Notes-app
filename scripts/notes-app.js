@@ -1,9 +1,15 @@
 let notes = []
 
 document.querySelector('button#add-note').addEventListener('click', function(e) {
+    const id = uuidv4()
+
     notes.push({
-        title : 'new note'
-    })
+        id: id,
+        title : 'new note',
+        body: '', 
+    }) 
+
+    console.log(notesp)
 
     renderNotes(notes)
 })
