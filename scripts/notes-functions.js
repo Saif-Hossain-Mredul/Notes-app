@@ -26,10 +26,17 @@ function renderNotes (notes) {
     const notesEl = document.querySelector('div#notes')
 
     notesEl.innerHTML = ''
-    notes.forEach(function(note) {
-        const noteEl = generateNoteDom(note)
-        notesEl.appendChild(noteEl)
-    }); 
 
-    console.log(notes)
+    if(notes.length === 0) { 
+        const emptyMessage = document.createElement('p') 
+        emptyMessage.textContent = 'You have no notes to show. Lets create one' 
+        notesEl.appendChild(emptyMessage)
+    } else {
+        notes.forEach(function(note) {
+            const noteEl = generateNoteDom(note)
+            notesEl.appendChild(noteEl)
+        }); 
+    }
+
+    
 }
