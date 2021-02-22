@@ -9,7 +9,7 @@ document.querySelector('button#add-note').addEventListener('click', function(e) 
         body: '', 
     }) 
 
-    console.log(notesp)
+    console.log(notes)
 
     renderNotes(notes)
 })
