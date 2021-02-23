@@ -26,7 +26,7 @@ bodyEl.addEventListener('input', (e) => {
 })
 
 saveButton.addEventListener('click', function (e) { 
-    note.updatedAt = moment() 
+    note.updatedAt = moment().valueOf()
 	saveNotes(notes)
 	location.assign('index.html')
 })

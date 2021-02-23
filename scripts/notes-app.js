@@ -22,7 +22,7 @@ filterEl.addEventListener('change', (e) => {
 
 document.querySelector('button#add-note').addEventListener('click', function(e) {
     const id = uuidv4() 
-    const createdAt = moment()
+    const createdAt = moment().valueOf()
 
     notes.push({
         id: id,

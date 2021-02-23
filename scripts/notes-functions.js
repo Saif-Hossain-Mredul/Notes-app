@@ -34,8 +34,30 @@ function generateNoteDom(note) {
 	return noteEl
 }
 
+function sortNotes(notes, filters) {
+    if(filters.sortBy === 'byCreated') { 
+        console.log('this byCreated')
+
+        return notes.sort((a, b) => a.createdAt - b.createdAt)
+    } else if(filters.sortBy ==='byEdited') {
+        console.log('this one')
+
+        return notes.sort((a, b) => {
+            console.log(a.updatedAt)
+
+            return b.updatedAt - a.updatedAt
+        })
+    } else {
+        console.log('this two')
+
+        return notes.sort((a, b) => a.title - b.title)
+    }
+}
+
 function renderNotes(notes, filters) {
-	const notesEl = document.querySelector('div#notes')
+    const notesEl = document.querySelector('div#notes')
+    
+    notes = sortNotes(notes, filters)
 
 	const filteredNotes = notes.filter((note) => {
 		return note.title
