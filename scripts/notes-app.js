@@ -11,8 +11,13 @@ searchEl.addEventListener('input', (e) => {
     filters.searchText = e.target.value
 
     renderNotes(notes, filters)
+}) 
 
-    console.log(filters.searchText)
+const filterEl = document.querySelector('select#filter-by')
+filterEl.addEventListener('change', (e) => {
+    filters.sortBy = e.target.value 
+
+    renderNotes(notes, filters)
 })
 
 document.querySelector('button#add-note').addEventListener('click', function(e) {
