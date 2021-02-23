@@ -10,10 +10,10 @@ function saveNotes(notes) {
 	// })
 
 	localStorage.setItem('notes', JSON.stringify(notes))
-} 
+}
 
 function getUpdatedAt(updatedAt) {
-    return `Last updated ${moment(updatedAt).fromNow()}.`
+	return `Last updated ${moment(updatedAt).fromNow()}.`
 }
 
 function generateNoteDom(note) {
@@ -25,39 +25,38 @@ function generateNoteDom(note) {
 
 	titleEl.textContent = note.title
 	titleEl.classList.add('list-item__title')
-    noteEl.appendChild(titleEl)
-    
-    bodyEl.textContent = getUpdatedAt(note.updatedAt)
-    bodyEl.classList.add('list-item__updated-at')
-    noteEl.appendChild(bodyEl)
+	noteEl.appendChild(titleEl)
+
+	bodyEl.textContent = getUpdatedAt(note.updatedAt)
+	bodyEl.classList.add('list-item__updated-at')
+	noteEl.appendChild(bodyEl)
 
 	return noteEl
 }
 
 function sortNotes(notes, filters) {
-    if(filters.sortBy === 'byCreated') { 
-        console.log('this byCreated')
+	if (filters.sortBy === 'byCreated') {
+		return notes.sort((a, b) => a.createdAt - b.createdAt)
+	} else if (filters.sortBy === 'byEdited') {
+		return notes.sort((a, b) => b.updatedAt - a.updatedAt)
+	} else {
+		return notes.sort((a, b) => {
+			const first = a.title
+			const second = b.title
 
-        return notes.sort((a, b) => a.createdAt - b.createdAt)
-    } else if(filters.sortBy ==='byEdited') {
-        console.log('this one')
-
-        return notes.sort((a, b) => {
-            console.log(a.updatedAt)
-
-            return b.updatedAt - a.updatedAt
-        })
-    } else {
-        console.log('this two')
-
-        return notes.sort((a, b) => a.title - b.title)
-    }
+			if (first > second) {
+				return 1
+			} else if (first < second) {
+				return -1
+			} else return 0
+		})
+	}
 }
 
 function renderNotes(notes, filters) {
-    const notesEl = document.querySelector('div#notes')
-    
-    notes = sortNotes(notes, filters)
+	const notesEl = document.querySelector('div#notes')
+
+	notes = sortNotes(notes, filters)
 
 	const filteredNotes = notes.filter((note) => {
 		return note.title
