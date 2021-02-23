@@ -5,6 +5,10 @@ function getNotes() {
 }
 
 function saveNotes(notes) {
+    // notes = notes.filter((note) => {
+    //     return note.title !== '' && note.body !== ''
+    // }) 
+
     localStorage.setItem('notes', JSON.stringify(notes))
 }
 

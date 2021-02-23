@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes</title>
-</head>
-<body>
-    <header class="header" id="header">
-        <div class="container">
-            <h1 class="header__title">Notes App</h1>
-            <h2 class="header__subtitle">A Simple JS Note App</h2>
-        </div>
-    </header> 
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Notes</title>
+	</head>
+	<body>
+		<header class="header" id="header">
+			<div class="container">
+				<h1 class="header__title">Notes App</h1>
+				<h2 class="header__subtitle">A Simple JS Note App</h2>
+			</div>
 
-    <div class="contianer">
-        <div id="notes"></div>
-        <button id="add-note" class="button">Add Note</button>
-    </div>
+			<div class="filter">
+				<input
+					type="text"
+					id="search-input"
+					class="input-search"
+					placeholder="Search in notes"
+				/>
+			</div>
+		</header>
 
-    <script src="/scripts/uuid.js"></script>
-    <script src="/scripts/notes-functions.js"></script>
-    <script src="/scripts/notes-app.js"></script>
-</body>
+		<div class="contianer">
+			<div id="notes"></div>
+			<button id="add-note" class="button">Add Note</button>
+		</div>
+
+		<script src="/scripts/uuid.js"></script>
+		<script src="/scripts/notes-functions.js"></script>
+		<script src="/scripts/notes-app.js"></script>
+	</body>
 </html>
