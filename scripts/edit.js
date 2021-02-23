@@ -25,7 +25,8 @@ bodyEl.addEventListener('input', (e) => {
 	note.body = e.target.value.trim()
 })
 
-saveButton.addEventListener('click', function (e) {
+saveButton.addEventListener('click', function (e) { 
+    note.updatedAt = moment() 
 	saveNotes(notes)
 	location.assign('index.html')
 })

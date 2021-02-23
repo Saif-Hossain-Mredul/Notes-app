@@ -1,7 +1,7 @@
 let notes = getNotes() 
 let filters = { 
     searchText: '', 
-
+    sortBy: 'byCreated',
 }
 
 renderNotes(notes, filters)
@@ -16,12 +16,15 @@ searchEl.addEventListener('input', (e) => {
 })
 
 document.querySelector('button#add-note').addEventListener('click', function(e) {
-    const id = uuidv4()
+    const id = uuidv4() 
+    const createdAt = moment()
 
     notes.push({
         id: id,
         title : 'Unnamed',
-        body: '', 
+        body: '',  
+        createdAt: createdAt, 
+        updatedAt: createdAt,
     })  
 
     saveNotes(notes)

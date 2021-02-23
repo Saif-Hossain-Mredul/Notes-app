@@ -10,6 +10,10 @@ function saveNotes(notes) {
 	// })
 
 	localStorage.setItem('notes', JSON.stringify(notes))
+} 
+
+function getUpdatedAt(updatedAt) {
+    return `Last updated ${moment(updatedAt).fromNow()}.`
 }
 
 function generateNoteDom(note) {
@@ -21,7 +25,11 @@ function generateNoteDom(note) {
 
 	titleEl.textContent = note.title
 	titleEl.classList.add('list-item__title')
-	noteEl.appendChild(titleEl)
+    noteEl.appendChild(titleEl)
+    
+    bodyEl.textContent = getUpdatedAt(note.updatedAt)
+    bodyEl.classList.add('list-item__updated-at')
+    noteEl.appendChild(bodyEl)
 
 	return noteEl
 }
