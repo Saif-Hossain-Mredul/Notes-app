@@ -14,6 +14,9 @@
       -ms-flex-align: center;
           align-items: center;
   padding-left: 2.5rem;
+  position: fixed;
+  height: 60px;
+  width: 220px;
 }
 
 .header-section span {
@@ -39,6 +42,10 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1rem 3rem;
+  width: 220px;
+  position: fixed;
+  top: 60px;
+  bottom: 0px;
 }
 
 .side-bar-section .header__subtitle {
@@ -80,6 +87,7 @@
   right: 0;
   height: 60px;
   background-color: white;
+  z-index: 10;
 }
 
 .search-header span {
@@ -113,6 +121,12 @@
           align-items: center;
   padding: 0rem 3rem;
   padding-right: 10rem;
+  position: fixed;
+  top: 60px;
+  left: 220px;
+  right: 0px;
+  height: 60px;
+  z-index: 10;
 }
 
 .filter-button .dropdown .filter-heading {
