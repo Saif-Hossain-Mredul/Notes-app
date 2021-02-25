@@ -14,10 +14,17 @@
     color: white; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
+    padding: 1rem 3rem; 
     
    .sidebar-bottom-section{
+        .icons {
+            font-size: 1.5rem;
 
+            span {
+                margin: 0 0.3rem;
+            }
+        }
     }
 }
 
@@ -27,7 +34,8 @@
     padding: 0 3rem;
     display: flex;
     justify-content: start;
-    align-items: center; 
+    align-items: center;  
+    
 
     span{
         font-size: 2rem; 
@@ -38,7 +46,9 @@
     input {
         border: none;
         color: $textColor1;
-    }
+    } 
+
+    
 }
 
 .filter-button {
@@ -106,5 +116,11 @@
 .notes-contianer {
 	grid-column: 2/3;
     grid-row: 3/4;
-    background-color: $backgroundColor1;
+    background-color: $backgroundColor1; 
+    padding: 0rem 3rem;
+
+    .notes {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
 }

@@ -26,6 +26,15 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 1rem 3rem;
+}
+
+.side-bar-section .sidebar-bottom-section .icons {
+  font-size: 1.5rem;
+}
+
+.side-bar-section .sidebar-bottom-section .icons span {
+  margin: 0 0.3rem;
 }
 
 .search-header {
@@ -139,6 +148,14 @@
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   background-color: #F3F3F4;
+  padding: 0rem 3rem;
+}
+
+.notes-contianer .notes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 * {
