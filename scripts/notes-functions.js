@@ -14,17 +14,27 @@ function saveNotes(notes) {
 
 function getUpdatedAt(updatedAt) {
 	return `Last updated ${moment(updatedAt).fromNow()}.`
+} 
+
+function getCreatedAt(createdAt) { 
+	const date = moment(createdAt).format('LL')
+	return (date)
 }
 
 function generateNoteDom(note) {
 	const noteEl = document.createElement('div')
 	const noteElLink = document.createElement('a')
 	const titleEl = document.createElement('p')
-	const bodyEl = document.createElement('p')
+	const bodyEl = document.createElement('p') 
+	const createdAtEl = document.createElement('p')
 
 	noteEl.classList.add('note-element')
 
 	noteElLink.setAttribute('href', `edit-page.html#${note.id}`)
+
+	createdAtEl.textContent = getCreatedAt(note.createdAt) 
+	createdAtEl.classList.add('list-item__created-at')
+	noteEl.appendChild(createdAtEl)
 
 	titleEl.textContent = note.title
 	titleEl.classList.add('list-item__title')
