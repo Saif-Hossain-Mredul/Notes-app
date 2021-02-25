@@ -3,42 +3,55 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./styles/css/main.css">
+		<link rel="stylesheet" href="./styles/css/main.css" />
 		<title>Notes</title>
 	</head>
 	<body>
-		<header class="header" id="header">
-			<div class="header-container">
+		<div class="body">
+			<section class="header-section">
 				<h1 class="header__title">Notes App</h1>
-				<h2 class="header__subtitle">A Simple JS Note App</h2>
-			</div>
+			</section>
 
-			<div class="filter">
+			<section class="side-bar-section">
+				<h2 class="header__subtitle">A Simple JS Note App</h2>
+
+				<div class="icons"></div>
+				<span>2021 All rights reserved.</span>
+			</section>
+
+			<section class="search-header">
 				<input
 					type="text"
 					id="search-input"
 					class="input-search"
 					placeholder="Search in notes"
-                /> 
-                
-                <div class="dropdown">  
-                    <span class="filter-heading">Sort by: </span>
-                    <select id="filter-by">
-                        <option value="byCreated">By creation</option>
-                        <option value="byEdited">By last edited</option>
-                        <option value="alphabetical">Alphabetical</option>
-                    </select>
-                </div>
-			</div>
-		</header>
+				/>
+			</section>
 
-		<div class="notes-contianer">
-			<div id="notes" class="notes"></div>
-			<button id="add-note" class="add-note_button">Add Note</button>
+			<section class="filter-button">
+				<div class="dropdown">
+					<span class="filter-heading">Sort by: </span>
+					<select id="filter-by">
+						<option value="byCreated">By creation</option>
+						<option value="byEdited">By last edited</option>
+						<option value="alphabetical">Alphabetical</option>
+					</select>
+				</div>
+
+				<button id="add-note" class="add-note_button">Add Note</button>
+			</section>
+
+			<section class="notes-contianer">
+				<div id="notes" class="notes"></div>
+			</section>
 		</div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous"></script>        
-        <script src="/scripts/uuid.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"
+			integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
+			crossorigin="anonymous"
+		></script>
+		<script src="/scripts/uuid.js"></script>
 		<script src="/scripts/notes-functions.js"></script>
 		<script src="/scripts/notes-app.js"></script>
 	</body>
