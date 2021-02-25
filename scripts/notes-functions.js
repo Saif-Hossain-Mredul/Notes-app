@@ -17,19 +17,23 @@ function getUpdatedAt(updatedAt) {
 }
 
 function generateNoteDom(note) {
-	const noteEl = document.createElement('a')
+	const noteEl = document.createElement('div')
+	const noteElLink = document.createElement('a')
 	const titleEl = document.createElement('p')
 	const bodyEl = document.createElement('p')
 
-	noteEl.setAttribute('href', `edit-page.html#${note.id}`)
+	noteElLink.setAttribute('href', `edit-page.html#${note.id}`)
+	noteEl.classList.add('note-element')
 
 	titleEl.textContent = note.title
 	titleEl.classList.add('list-item__title')
-	noteEl.appendChild(titleEl)
+	noteElLink.appendChild(titleEl)
 
 	bodyEl.textContent = getUpdatedAt(note.updatedAt)
 	bodyEl.classList.add('list-item__updated-at')
-	noteEl.appendChild(bodyEl)
+	noteElLink.appendChild(bodyEl)
+
+	noteEl.appendChild(noteElLink)
 
 	return noteEl
 }

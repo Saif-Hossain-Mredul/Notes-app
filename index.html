@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<header class="header" id="header">
-			<div class="container">
+			<div class="header-container">
 				<h1 class="header__title">Notes App</h1>
 				<h2 class="header__subtitle">A Simple JS Note App</h2>
 			</div>
@@ -22,7 +22,7 @@
                 /> 
                 
                 <div class="dropdown">  
-                    <span class="filter-heading">Sort by</span>
+                    <span class="filter-heading">Sort by: </span>
                     <select id="filter-by">
                         <option value="byCreated">By creation</option>
                         <option value="byEdited">By last edited</option>
@@ -32,9 +32,9 @@
 			</div>
 		</header>
 
-		<div class="contianer">
-			<div id="notes"></div>
-			<button id="add-note" class="button">Add Note</button>
+		<div class="notes-contianer">
+			<div id="notes" class="notes"></div>
+			<button id="add-note" class="add-note_button">Add Note</button>
 		</div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous"></script>        

@@ -1,0 +1,37 @@
+.header { 
+    width: 100%; 
+    padding: 3rem 10rem;
+
+    .header-container {
+       margin-bottom: 1.5rem; 
+    }
+
+    .filter { 
+        display: flex; 
+
+        input {
+            margin-right: 1rem;
+        }
+    }
+} 
+
+
+
+.notes-contianer {
+    padding: 0rem 10rem;
+
+    #notes { 
+        .note-element{ 
+            margin-bottom: 1.5rem; 
+            color: grey;
+
+            .list-item__title {
+                font-size: 2rem;
+            }
+        } 
+    }
+    
+    .add-note_button {
+        margin-top: 1rem;
+    }
+}
