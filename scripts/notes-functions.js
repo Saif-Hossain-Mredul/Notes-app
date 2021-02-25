@@ -23,20 +23,20 @@ function generateNoteDom(note) {
 	const bodyEl = document.createElement('p')
 
 	noteEl.classList.add('note-element')
-	
+
 	noteElLink.setAttribute('href', `edit-page.html#${note.id}`)
 
 	titleEl.textContent = note.title
 	titleEl.classList.add('list-item__title')
-	noteElLink.appendChild(titleEl)
+	noteEl.appendChild(titleEl)
 
 	bodyEl.textContent = getUpdatedAt(note.updatedAt)
 	bodyEl.classList.add('list-item__updated-at')
-	noteElLink.appendChild(bodyEl)
+	noteEl.appendChild(bodyEl)
 
-	noteEl.appendChild(noteElLink)
+	noteElLink.appendChild(noteEl)
 
-	return noteEl
+	return noteElLink
 }
 
 function sortNotes(notes, filters) {
