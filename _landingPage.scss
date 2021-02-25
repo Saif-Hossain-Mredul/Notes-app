@@ -4,7 +4,15 @@
 	grid-row: 1/2;
 	grid-column: 1/2;
 	background-color: $purple2;
-	color: white;
+    color: white; 
+    display: flex; 
+    align-items: center;  
+    padding-left: 2.5rem;
+
+    span {
+        font-size: 2rem;
+        margin: 0 0.5rem;
+    }
 }
 
 .side-bar-section {
@@ -16,6 +24,11 @@
     flex-direction: column;
     justify-content: space-between; 
     padding: 1rem 3rem; 
+
+    .header__subtitle {
+        font-weight: 300; 
+        font-size: 2rem; 
+    }
     
    .sidebar-bottom-section{
         .icons {
