@@ -48,7 +48,13 @@
     display: flex;
     justify-content: start;
     align-items: center;  
-    
+    box-shadow: 4px 2px 10px 0.5px rgb(209, 208, 208); 
+    position: fixed;
+    left: 220px; 
+    top: 0; 
+    right: 0;
+    height: 60px; 
+    background-color: white;
 
     span{
         font-size: 2rem; 
@@ -134,6 +140,15 @@
 
     .notes {
         display: grid; 
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, 230px);  
+        column-gap: 1.5rem; 
+        row-gap: 1.5rem;
+
+        .note-element {
+            background-color: white; 
+            height: 230px; 
+            border-radius: 2px; 
+            box-shadow: 0px 2px 5px 1px rgb(193, 192, 192);
+        }
     }
 }

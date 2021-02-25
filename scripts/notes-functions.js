@@ -22,8 +22,9 @@ function generateNoteDom(note) {
 	const titleEl = document.createElement('p')
 	const bodyEl = document.createElement('p')
 
-	noteElLink.setAttribute('href', `edit-page.html#${note.id}`)
 	noteEl.classList.add('note-element')
+	
+	noteElLink.setAttribute('href', `edit-page.html#${note.id}`)
 
 	titleEl.textContent = note.title
 	titleEl.classList.add('list-item__title')
