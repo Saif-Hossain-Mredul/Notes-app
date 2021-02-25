@@ -48,6 +48,7 @@
 
 .side-bar-section .sidebar-bottom-section .icons {
   font-size: 1.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .side-bar-section .sidebar-bottom-section .icons span {
@@ -121,14 +122,8 @@
   padding: 0.3rem 0.8rem;
   border-radius: 4px;
   margin-right: 0.5rem;
-}
-
-.filter-button .dropdown .filter-by {
-  color: #858499;
-}
-
-.filter-button .dropdown .filter-by option:hover {
-  background-color: #8981D8;
+  padding-bottom: 0.25rem;
+  padding-top: 0.1rem;
 }
 
 .filter-button .button {
