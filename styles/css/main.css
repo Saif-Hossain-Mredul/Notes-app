@@ -140,6 +140,12 @@
   padding-top: 0.1rem;
 }
 
+.filter-button .dropdown select {
+  border: 1.5px solid #8981D8;
+  border-radius: 4px;
+  color: #67676e;
+}
+
 .filter-button .button {
   display: -webkit-box;
   display: -ms-flexbox;
