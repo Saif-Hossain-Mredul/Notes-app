@@ -22,7 +22,7 @@ function getCreatedAt(createdAt) {
 
 function generateNoteDom(note) {
 	const noteElLink = document.createElement('a')
-	const noteEl = document.createElement('div')
+	const noteEl = document.createElement('div') 
 	const createdAtEl = document.createElement('p')
 	const titleEl = document.createElement('p')
 	const updatedAtEl = document.createElement('p')
@@ -32,15 +32,15 @@ function generateNoteDom(note) {
 	noteElLink.setAttribute('href', `edit-page.html#${note.id}`)
 
 	createdAtEl.textContent = getCreatedAt(note.createdAt)
-	createdAtEl.classList.add('list-item__created-at')
+	createdAtEl.classList.add('note-element__created-at')
 	noteEl.appendChild(createdAtEl)
 
 	titleEl.textContent = note.title
-	titleEl.classList.add('list-item__title')
+	titleEl.classList.add('note-element__title')
 	noteEl.appendChild(titleEl)
 
 	updatedAtEl.textContent = getUpdatedAt(note.updatedAt)
-	updatedAtEl.classList.add('list-item__updated-at')
+	updatedAtEl.classList.add('note-element__updated-at')
 	noteEl.appendChild(updatedAtEl)
 
 	noteElLink.appendChild(noteEl)

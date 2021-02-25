@@ -4,152 +4,174 @@
 	grid-row: 1/2;
 	grid-column: 1/2;
 	background-color: $purple2;
-    color: white; 
-    display: flex; 
-    align-items: center;  
-    padding-left: 2.5rem;
+	color: white;
+	display: flex;
+	align-items: center;
+	padding-left: 2.5rem;
 
-    span {
-        font-size: 2rem;
-        margin: 0 0.5rem;
-    }
+	span {
+		font-size: 2rem;
+		margin: 0 0.5rem;
+	}
 }
 
 .side-bar-section {
 	grid-row: 2/-1;
 	grid-column: 1/2;
 	background-color: $purple1;
-    color: white; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    padding: 1rem 3rem; 
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1rem 3rem;
 
-    .header__subtitle {
-        font-weight: 300; 
-        font-size: 2rem; 
-    }
-    
-   .sidebar-bottom-section{
-        .icons {
-            font-size: 1.5rem;
+	.header__subtitle {
+		font-weight: 300;
+		font-size: 2rem;
+	}
 
-            span {
-                margin: 0 0.3rem;
-            }
-        }
-    }
+	.sidebar-bottom-section {
+		.icons {
+			font-size: 1.5rem;
+
+			span {
+				margin: 0 0.3rem;
+			}
+		}
+	}
 }
 
 .search-header {
 	grid-column: 2/3;
-    grid-row: 1/2; 
-    padding: 0 3rem;
-    display: flex;
-    justify-content: start;
-    align-items: center;  
-    box-shadow: 4px 2px 10px 0.5px rgb(209, 208, 208); 
-    position: fixed;
-    left: 220px; 
-    top: 0; 
-    right: 0;
-    height: 60px; 
-    background-color: white;
+	grid-row: 1/2;
+	padding: 0 3rem;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	box-shadow: 4px 2px 10px 0.5px rgb(209, 208, 208);
+	position: fixed;
+	left: 220px;
+	top: 0;
+	right: 0;
+	height: 60px;
+	background-color: white;
 
-    span{
-        font-size: 2rem; 
-        color: $textColor1; 
-        margin-right: 1.5rem; 
-    } 
+	span {
+		font-size: 2rem;
+		color: $textColor1;
+		margin-right: 1.5rem;
+	}
 
-    input {
-        border: none;
-        color: $textColor1;
-    } 
-
-    
+	input {
+		border: none;
+		color: $textColor1;
+	}
 }
 
 .filter-button {
 	grid-column: 2/3;
 	grid-row: 2/3;
-    display: flex; 
-    background-color: $backgroundColor1; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    padding: 0rem 3rem;  
-    padding-right: 10rem;
+	display: flex;
+	background-color: $backgroundColor1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0rem 3rem;
+	padding-right: 10rem;
 
-    .dropdown {
-        .filter-heading {
-            font-size: 1.4rem; 
-            background-color: $purple1;
-            color: white; 
-            padding: 0.3rem 0.8rem; 
-            border-radius: 4px; 
-            margin-right: 0.5rem;
-        }
+	.dropdown {
+		.filter-heading {
+			font-size: 1.4rem;
+			background-color: $purple1;
+			color: white;
+			padding: 0.3rem 0.8rem;
+			border-radius: 4px;
+			margin-right: 0.5rem;
+		}
 
-        .filter-by { 
-            color: $textColor1;
+		.filter-by {
+			color: $textColor1;
 
-            option { 
-                &:hover {
-                    background-color: $purple1;
-                }
-            }
-        }
-    }
+			option {
+				&:hover {
+					background-color: $purple1;
+				}
+			}
+		}
+	}
 
-    .button {
-        display: flex;
-        align-items: center;  
-        cursor: pointer;
+	.button {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
 
-        .icon-container {
-            border: 1px solid $purple1; 
-            border-radius: 200px; 
-            margin-right: 0.5rem;
-            padding: 0.4rem 0.5rem; 
-            display: grid;
-            place-items: center;
+		.icon-container {
+			border: 1px solid $purple1;
+			border-radius: 200px;
+			margin-right: 0.5rem;
+			padding: 0.4rem 0.5rem;
+			display: grid;
+			place-items: center;
 
-            span {
-                color: $purple1;
-                font-weight: 100; 
-                font-size: 0.7rem;
-            } 
-        } 
+			span {
+				color: $purple1;
+				font-weight: 100;
+				font-size: 0.7rem;
+			}
+		}
 
-        button {
-            border: none; 
-            background-color: transparent; 
-            color: $purple1; 
-            font-weight: 600;
-            cursor: pointer;
-        }
-    }
+		button {
+			border: none;
+			background-color: transparent;
+			color: $purple1;
+			font-weight: 600;
+			cursor: pointer;
+		}
+	}
 }
 
 .notes-contianer {
 	grid-column: 2/3;
-    grid-row: 3/4;
-    background-color: $backgroundColor1; 
-    padding: 0rem 3rem;
+	grid-row: 3/4;
+	background-color: $backgroundColor1;
+	padding: 0rem 3rem;
 
-    .notes {
-        display: grid; 
-        grid-template-columns: repeat(auto-fill, 230px);  
-        column-gap: 1.5rem; 
-        row-gap: 1.5rem;
+	.notes {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 230px);
+		column-gap: 1.5rem;
+		row-gap: 1.5rem;
 
-        .note-element {
-            background-color: white; 
-            height: 230px; 
-            border-radius: 2px; 
-            box-shadow: 0px 2px 5px 1px rgb(193, 192, 192); 
-            padding: 2.2rem;
-        }
-    }
+		.note-element {
+			background-color: white;
+			height: 230px;
+			border-radius: 2px;
+			box-shadow: 0px 2px 5px 1px rgb(193, 192, 192);
+			padding: 2.2rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			position: relative;
+
+			.note-element__created-at {
+				color: $textColor1;
+				font-size: 1.3rem;
+				font-weight: 500;
+			}
+
+			.note-element__title {
+				font-size: 2.5rem;
+				font-weight: 600;
+				justify-self: start;
+				position: absolute;
+				top: 4.8rem;
+				color: $textColor3;
+			}
+
+			.note-element__updated-at {
+				font-size: 1.1rem;
+				color: $textColor1;
+			}
+		}
+	}
 }
