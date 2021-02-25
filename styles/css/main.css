@@ -69,6 +69,66 @@
   display: -ms-flexbox;
   display: flex;
   background-color: #F3F3F4;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 3rem;
+  padding-right: 10rem;
+}
+
+.filter-button .dropdown .filter-heading {
+  font-size: 1.4rem;
+  background-color: #8981D8;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.filter-button .dropdown .filter-by {
+  color: #858499;
+}
+
+.filter-button .dropdown .filter-by option:hover {
+  background-color: #8981D8;
+}
+
+.filter-button .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.filter-button .button .icon-container {
+  border: 1px solid #8981D8;
+  border-radius: 200px;
+  margin-right: 0.5rem;
+  padding: 0.4rem 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.filter-button .button .icon-container span {
+  color: #8981D8;
+  font-weight: 100;
+  font-size: 0.7rem;
+}
+
+.filter-button .button button {
+  border: none;
+  background-color: transparent;
+  color: #8981D8;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .notes-contianer {

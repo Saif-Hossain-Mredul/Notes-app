@@ -45,7 +45,62 @@
 	grid-column: 2/3;
 	grid-row: 2/3;
     display: flex; 
-    background-color: $backgroundColor1;
+    background-color: $backgroundColor1; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0rem 3rem;  
+    padding-right: 10rem;
+
+    .dropdown {
+        .filter-heading {
+            font-size: 1.4rem; 
+            background-color: $purple1;
+            color: white; 
+            padding: 0.3rem 0.8rem; 
+            border-radius: 4px; 
+            margin-right: 0.5rem;
+        }
+
+        .filter-by { 
+            color: $textColor1;
+
+            option { 
+                &:hover {
+                    background-color: $purple1;
+                }
+            }
+        }
+    }
+
+    .button {
+        display: flex;
+        align-items: center;  
+        cursor: pointer;
+
+        .icon-container {
+            border: 1px solid $purple1; 
+            border-radius: 200px; 
+            margin-right: 0.5rem;
+            padding: 0.4rem 0.5rem; 
+            display: grid;
+            place-items: center;
+
+            span {
+                color: $purple1;
+                font-weight: 100; 
+                font-size: 0.7rem;
+            } 
+        } 
+
+        button {
+            border: none; 
+            background-color: transparent; 
+            color: $purple1; 
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
 }
 
 .notes-contianer {
