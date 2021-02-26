@@ -6,31 +6,55 @@
 		<link rel="stylesheet" href="./styles/css/main.css">
 		<title>Edit</title>
 	</head>
-	<body>
-		<header>
-			<h1>Edit note</h1>
-		</header>
+	<body> 
+		<div class="body">
+			<section class="header-section">
+				<span class="fa fa-list-alt"></span> 
+				<h1 class="header__title">Notes App</h1>
+			</section>
 
-		<section class="edit-body">
-			<input
-				type="text"
-				id="note-title"
-				class="title-input"
-				placeholder="Title"
-			/>
-			<br />
-			<textarea
-				cols="40"
-				rows="10"
-				id="note-body"
-				class="body-input"
-				placeholder="Note body"
-            ></textarea> 
-            <br> 
+			<section class="side-bar-section">
+				<h2 class="header__subtitle">A Simple JS Note App</h2>
 
-            <button id="save-button" class="save-button">Save Note</button>
-            <button id="remove-button" class="remove-button">Remove Note</button>
-        </section>
+				<div class="sidebar-bottom-section"> 
+					<div class="icons">
+						<span class="fa fa-facebook"></span> 
+						<span class="fa fa-twitter"></span>
+						<span class="fa fa-linkedin"></span>
+					</div>
+					<span>&copy2021 All rights reserved.</span>
+				</div>
+			</section>
+
+			<section class="edit-header">
+					<h1>Edit your note</h1>
+			</section> 
+
+			<section class="edit-history">
+
+			</section>
+
+			<section class="edit-body">
+				<input
+					type="text"
+					id="note-title"
+					class="title-input"
+					placeholder="Title"
+				/>
+				<br />
+				<textarea
+					cols="40"
+					rows="10"
+					id="note-body"
+					class="body-input"
+					placeholder="Note body"
+				></textarea> 
+				<br> 
+	
+				<button id="save-button" class="save-button">Save Note</button>
+				<button id="remove-button" class="remove-button">Remove Note</button>
+			</section>
+		</div>
 
 		<script src="/scripts/uuid.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous"></script>  

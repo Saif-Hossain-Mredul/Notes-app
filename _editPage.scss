@@ -1,0 +1,27 @@
+.edit-header {
+    grid-column: 2/3;
+    grid-row: 1/2; 
+    padding: 0 3rem;
+	display: flex;
+	justify-content: start;
+    align-items: center; 
+    color: $textColor3; 
+    
+    h1 {
+        font-size: 1.8rem; 
+        font-weight: 400;
+    }
+}
+
+.edit-history {
+    grid-column: 2/3;
+	grid-row: 2/3;
+	background-color: $backgroundColor1;
+}
+
+.edit-body {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: $backgroundColor1;
+    padding: 0 3rem;
+}
