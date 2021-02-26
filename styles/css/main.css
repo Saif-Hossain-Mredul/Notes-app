@@ -287,6 +287,18 @@
       justify-content: space-around;
 }
 
+.edit-history .created-at-element {
+  color: #858499;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.edit-history .updated-at-element {
+  font-size: 1.1rem;
+  color: #858499;
+  font-weight: 400;
+}
+
 .edit-body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
