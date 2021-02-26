@@ -16,7 +16,11 @@
 .edit-history {
     grid-column: 2/3;
 	grid-row: 2/3;
-	background-color: $backgroundColor1;
+    background-color: $backgroundColor1;
+    padding: 1rem 3rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .edit-body {

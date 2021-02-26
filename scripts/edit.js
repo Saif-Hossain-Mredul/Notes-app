@@ -1,7 +1,8 @@
 const titleEl = document.querySelector('input#note-title')
 const bodyEl = document.querySelector('textarea#note-body')
 const saveButton = document.querySelector('button#save-button')
-const removeButton = document.querySelector('button#remove-button')
+const removeButton = document.querySelector('button#remove-button') 
+const editHistoryEl = document.querySelector('section#edit-history')
 
 const noteId = location.hash.substring(1)
 let notes = getNotes()
@@ -12,6 +13,18 @@ let note = notes.find((note) => {
 let noteIndex = notes.findIndex((note) => {
 	return note.id === noteId
 })
+
+const updatedAtEl = document.createElement('p')
+const createdAtEl = document.createElement('p')
+
+createdAtEl.textContent = `Created on ${getCreatedAt(note.createdAt)}` 
+createdAtEl.classList.add('created-at-element')
+editHistoryEl.appendChild(createdAtEl)
+
+updatedAtEl.textContent = getUpdatedAt(note.updatedAt) 
+updatedAtEl.classList.add('updated-at-element')
+editHistoryEl.appendChild(updatedAtEl)
+
 titleEl.value = note.title
 titleEl.addEventListener('input', (e) => {
 	note.title = e.target.value.trim()
@@ -23,11 +36,12 @@ note.body.length > 0
 
 bodyEl.addEventListener('input', (e) => {
 	note.body = e.target.value.trim()
-})
+}) 
 
 saveButton.addEventListener('click', function (e) { 
     note.updatedAt = moment().valueOf()
-	saveNotes(notes)
+	saveNotes(notes) 
+	console.log(editHistoryEl)
 	location.assign('index.html')
 })
 
