@@ -99,6 +99,11 @@
 .search-header input {
   border: none;
   color: #858499;
+  width: 40rem;
+}
+
+.search-header input:focus {
+  outline: none;
 }
 
 .filter-button {
@@ -144,6 +149,11 @@
   border: 1.5px solid #8981D8;
   border-radius: 4px;
   color: #67676e;
+}
+
+.filter-button .dropdown:focus {
+  outline: none;
+  border: none;
 }
 
 .filter-button .button {

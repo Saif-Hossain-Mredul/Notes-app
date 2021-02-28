@@ -73,7 +73,12 @@
 
 	input {
 		border: none;
-		color: $textColor1;
+		color: $textColor1; 
+		width: 40rem; 
+
+		&:focus {
+			outline: none;
+		}
 	}
 }
 
@@ -110,6 +115,11 @@
 			border: 1.5px solid $purple1;
 			border-radius: 4px;
 			color: $textColor3;
+		} 
+
+		&:focus {
+			outline: none;
+			border: none;
 		}
 	}
 
@@ -138,7 +148,9 @@
 			background-color: transparent;
 			color: $purple1;
 			font-weight: 600;
-			cursor: pointer;
+			cursor: pointer; 
+
+			
 		}
 	}
 }
