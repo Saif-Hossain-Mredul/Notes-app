@@ -307,10 +307,15 @@
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   background-color: #F3F3F4;
-  padding: 0 3rem;
+  padding: 1rem 3rem;
 }
 
-.edit-body input {
+.edit-body .note-title-section h1 {
+  color: #67676e;
+  font-weight: 500;
+}
+
+.edit-body .note-title-section input {
   width: 28rem;
   padding: 0.5rem 0.75rem;
   font-size: 1.5rem;
@@ -318,6 +323,11 @@
   color: #49494e;
   border: 1.5px solid #C3C1BE;
   margin: 0.75rem 0rem;
+}
+
+.edit-body .note-body-section h1 {
+  color: #67676e;
+  font-weight: 500;
 }
 
 * {

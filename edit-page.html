@@ -31,23 +31,34 @@
 			</section>
 
 			<section class="edit-history" id="edit-history"></section>
+			
+			<section class="edit-body"> 
 
-			<section class="edit-body">
-				<input
+				<div class="note-title-section"> 
+					<h1>Edit your note title :</h1>
+
+					<input
 					type="text"
 					id="note-title"
 					class="title-input"
 					placeholder="Title"
 				/>
+				</div>
+				
 				<br />
-				<textarea
+
+				<div class="note-body-section"> 
+					<h1>Edit note body :</h1>
+					<textarea
 					cols="40"
 					rows="10"
 					id="note-body"
 					class="body-input"
 					placeholder="Note body"
 				></textarea>
-				<br />
+				</div>
+
+				<br /><br>
 
 				<button id="save-button" class="save-button">Save Note</button>
 				<button id="remove-button" class="remove-button">
