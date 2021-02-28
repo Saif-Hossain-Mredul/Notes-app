@@ -39,7 +39,8 @@
     grid-column: 2/3;
     grid-row: 3/4;
     background-color: $backgroundColor1;
-    padding: 1rem 3rem;  
+    padding: 1rem 3rem;   
+    position: relative;
 
     .note-title-section {
         h1 {
@@ -72,7 +73,7 @@
 
         textarea {
             width: 100%;  
-            height: 35rem;
+            height: 39.5rem;
             padding: 0.5rem 0.75rem; 
             font-size: 1.5rem; 
             font-weight: 400;
@@ -91,6 +92,17 @@
     }
 
     .note-buttons-section {
-        
+        position: absolute;
+        bottom: 3rem; 
+        right: 3rem;
+
+        button { 
+            border: none; 
+            background-color: $purple1;
+            color: white;
+            padding: 0.5rem 0.8rem;
+            border-radius: 2px; 
+            margin-right: 1.5rem; 
+        }
     }
 }
