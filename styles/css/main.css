@@ -310,6 +310,16 @@
   padding: 0 3rem;
 }
 
+.edit-body input {
+  width: 28rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #49494e;
+  border: 1.5px solid #C3C1BE;
+  margin: 0.75rem 0rem;
+}
+
 * {
   margin: 0;
   padding: 0;
