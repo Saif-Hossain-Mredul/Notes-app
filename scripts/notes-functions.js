@@ -70,7 +70,6 @@ function sortNotes(notes, filters) {
 function renderNotes(notes, filters) {
 	const notesEl = document.querySelector('div#notes') 
 	const notesContainerEl = document.querySelector('section#notes-contianer') 
-	console.log(notesContainerEl)
 
 	notes = sortNotes(notes, filters)
 

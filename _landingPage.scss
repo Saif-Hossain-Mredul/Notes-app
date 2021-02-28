@@ -162,11 +162,17 @@
 	grid-column: 2/3;
 	grid-row: 3/4;
 	background-color: $backgroundColor1;
-	padding: 0rem 3rem;
+	padding: 0rem 3rem;  
+	position: relative;
 
 	.empty-message {
 		color: $textColor3;
-		font-size: 3rem;
+		font-size: 3rem;   
+		height: 35rem;
+		display: grid;
+		place-items: center;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.notes {

@@ -204,11 +204,18 @@
   grid-row: 3/4;
   background-color: #F3F3F4;
   padding: 0rem 3rem;
+  position: relative;
 }
 
 .notes-contianer .empty-message {
   color: #67676e;
   font-size: 3rem;
+  height: 35rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .notes-contianer .notes {
