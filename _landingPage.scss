@@ -150,7 +150,10 @@
 			font-weight: 600;
 			cursor: pointer; 
 
-			
+			&:focus {
+				outline: none;
+				border: none;
+			}
 		}
 	}
 }

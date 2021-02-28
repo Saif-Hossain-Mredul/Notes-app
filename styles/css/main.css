@@ -190,6 +190,11 @@
   cursor: pointer;
 }
 
+.filter-button .button button:focus {
+  outline: none;
+  border: none;
+}
+
 .notes-contianer {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
