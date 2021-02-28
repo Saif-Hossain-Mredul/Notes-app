@@ -97,19 +97,25 @@
         left: 3rem;
 
         button { 
-            border: none; 
+            border: 1px solid $backgroundColor1; 
             background-color: $purple1;
             color: white;
             padding: 0.5rem 0.8rem;
             border-radius: 2px; 
             margin-right: 1.5rem;  
-            cursor: pointer; 
+            cursor: pointer;  
+            box-sizing: border-box; 
+            transition: all 0.2s ease-in-out;
 
-            // &:focus {
-            //     outline: none;
-            //     border: 1px solid white;
-            //     border-radius: 3px;
-            // }
+            &:focus {
+                outline: none;
+            } 
+            
+            &:hover {
+                background-color: white;
+                color: $purple2; 
+                border: 1px solid $purple1;
+            }
         }
     }
 }
