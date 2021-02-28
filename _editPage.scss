@@ -94,7 +94,7 @@
     .note-buttons-section {
         position: absolute;
         bottom: 3rem; 
-        right: 3rem;
+        left: 3rem;
 
         button { 
             border: none; 
@@ -102,7 +102,14 @@
             color: white;
             padding: 0.5rem 0.8rem;
             border-radius: 2px; 
-            margin-right: 1.5rem; 
+            margin-right: 1.5rem;  
+            cursor: pointer; 
+
+            // &:focus {
+            //     outline: none;
+            //     border: 1px solid white;
+            //     border-radius: 3px;
+            // }
         }
     }
 }

@@ -359,7 +359,7 @@
 .edit-body .note-buttons-section {
   position: absolute;
   bottom: 3rem;
-  right: 3rem;
+  left: 3rem;
 }
 
 .edit-body .note-buttons-section button {
@@ -369,6 +369,7 @@
   padding: 0.5rem 0.8rem;
   border-radius: 2px;
   margin-right: 1.5rem;
+  cursor: pointer;
 }
 
 * {
