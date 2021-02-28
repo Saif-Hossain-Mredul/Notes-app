@@ -316,13 +316,19 @@
 }
 
 .edit-body .note-title-section input {
-  width: 28rem;
+  width: 40rem;
   padding: 0.5rem 0.75rem;
   font-size: 1.5rem;
   font-weight: 400;
   color: #49494e;
   border: 1.5px solid #C3C1BE;
   margin: 0.75rem 0rem;
+}
+
+.edit-body .note-title-section input:focus {
+  outline: none;
+  border: 2px solid #C3C1BE;
+  border-radius: 3px;
 }
 
 .edit-body .note-body-section h1 {
@@ -331,13 +337,22 @@
 }
 
 .edit-body .note-body-section textarea {
-  width: 28rem;
+  width: 100%;
+  height: 35rem;
   padding: 0.5rem 0.75rem;
   font-size: 1.5rem;
   font-weight: 400;
   color: #49494e;
   border: 1.5px solid #C3C1BE;
   margin: 0.75rem 0rem;
+  resize: none;
+  margin-right: 3rem;
+}
+
+.edit-body .note-body-section textarea:focus {
+  outline: none;
+  border: 2px solid #C3C1BE;
+  border-radius: 3px;
 }
 
 * {

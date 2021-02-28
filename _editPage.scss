@@ -48,13 +48,19 @@
         }
 
         input {
-            width: 28rem; 
+            width: 40rem; 
             padding: 0.5rem 0.75rem; 
             font-size: 1.5rem; 
             font-weight: 400;
             color: $textColor4; 
             border: 1.5px solid $textColor2; 
             margin: 0.75rem 0rem;
+
+            &:focus { 
+                outline: none;
+                border: 2px solid $textColor2; 
+                border-radius: 3px;
+            }
         }
     }
 
@@ -65,13 +71,22 @@
         } 
 
         textarea {
-            width: 28rem; 
+            width: 100%;  
+            height: 35rem;
             padding: 0.5rem 0.75rem; 
             font-size: 1.5rem; 
             font-weight: 400;
             color: $textColor4; 
             border: 1.5px solid $textColor2; 
-            margin: 0.75rem 0rem;
+            margin: 0.75rem 0rem; 
+            resize: none; 
+            margin-right: 3rem; 
+
+            &:focus { 
+                outline: none;
+                border: 2px solid $textColor2; 
+                border-radius: 3px;
+            }
         }
     }
 }
