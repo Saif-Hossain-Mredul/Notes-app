@@ -68,7 +68,9 @@ function sortNotes(notes, filters) {
 }
 
 function renderNotes(notes, filters) {
-	const notesEl = document.querySelector('div#notes')
+	const notesEl = document.querySelector('div#notes') 
+	const notesContainerEl = document.querySelector('section#notes-contianer') 
+	console.log(notesContainerEl)
 
 	notes = sortNotes(notes, filters)
 
@@ -82,8 +84,9 @@ function renderNotes(notes, filters) {
 
 	if (notes.length === 0) {
 		const emptyMessage = document.createElement('p')
-		emptyMessage.textContent = 'You have no notes to show. Lets create one'
-		notesEl.appendChild(emptyMessage)
+		emptyMessage.textContent = 'You have no notes to show.'
+		emptyMessage.classList.add('empty-message')
+		notesContainerEl.appendChild(emptyMessage)
 	} else {
 		filteredNotes.forEach(function (note) {
 			const noteEl = generateNoteDom(note)

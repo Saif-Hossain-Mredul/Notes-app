@@ -206,6 +206,11 @@
   padding: 0rem 3rem;
 }
 
+.notes-contianer .empty-message {
+  color: #67676e;
+  font-size: 3rem;
+}
+
 .notes-contianer .notes {
   display: -ms-grid;
   display: grid;
