@@ -58,7 +58,11 @@
   margin-bottom: 0.3rem;
 }
 
-.side-bar-section .sidebar-bottom-section .icons span {
+.side-bar-section .sidebar-bottom-section .icons a {
+  color: white;
+}
+
+.side-bar-section .sidebar-bottom-section .icons a span {
   margin: 0 0.3rem;
 }
 
