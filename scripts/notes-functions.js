@@ -22,7 +22,7 @@ function getCreatedAt(createdAt) {
 
 function generateNoteDom(note) {
 	const noteElLink = document.createElement('a')
-	const noteEl = document.createElement('div') 
+	const noteEl = document.createElement('div')
 	const createdAtEl = document.createElement('p')
 	const titleEl = document.createElement('p')
 	const updatedAtEl = document.createElement('p')
@@ -68,8 +68,8 @@ function sortNotes(notes, filters) {
 }
 
 function renderNotes(notes, filters) {
-	const notesEl = document.querySelector('div#notes') 
-	const notesContainerEl = document.querySelector('section#notes-contianer') 
+	const notesEl = document.querySelector('div#notes')
+	const notesContainerEl = document.querySelector('section#notes-contianer')
 
 	notes = sortNotes(notes, filters)
 

@@ -1,121 +1,121 @@
 .edit-header {
-    grid-column: 2/3;
-    grid-row: 1/2; 
-    padding: 0 3rem;
+	grid-column: 2/3;
+	grid-row: 1/2;
+	padding: 0 3rem;
 	display: flex;
 	justify-content: start;
-    align-items: center; 
-    color: $textColor3; 
-    
-    h1 {
-        font-size: 1.8rem; 
-        font-weight: 400;
-    }
+	align-items: center;
+	color: $textColor3;
+
+	h1 {
+		font-size: 1.8rem;
+		font-weight: 400;
+	}
 }
 
 .edit-history {
-    grid-column: 2/3;
+	grid-column: 2/3;
 	grid-row: 2/3;
-    background-color: $backgroundColor1;
-    padding: 1rem 3rem; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+	background-color: $backgroundColor1;
+	padding: 1rem 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 
-    .created-at-element {
-        color: $textColor1; 
-        font-size: 1.3rem; 
-        font-weight: 500;
-    }
+	.created-at-element {
+		color: $textColor1;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
 
-    .updated-at-element {
-        font-size: 1.18rem;
-        color: $textColor1;
-        font-weight: 400;
-    }
+	.updated-at-element {
+		font-size: 1.18rem;
+		color: $textColor1;
+		font-weight: 400;
+	}
 }
 
 .edit-body {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    background-color: $backgroundColor1;
-    padding: 1rem 3rem;   
-    position: relative;
+	grid-column: 2/3;
+	grid-row: 3/4;
+	background-color: $backgroundColor1;
+	padding: 1rem 3rem;
+	position: relative;
 
-    .note-title-section {
-        h1 {
-            color: $textColor3;
-            font-weight: 500;
-        }
+	.note-title-section {
+		h1 {
+			color: $textColor3;
+			font-weight: 500;
+		}
 
-        input {
-            width: 40rem; 
-            padding: 0.5rem 0.75rem; 
-            font-size: 1.5rem; 
-            font-weight: 400;
-            color: $textColor4; 
-            border: 1.5px solid $textColor2; 
-            margin: 0.75rem 0rem;
+		input {
+			width: 40rem;
+			padding: 0.5rem 0.75rem;
+			font-size: 1.5rem;
+			font-weight: 400;
+			color: $textColor4;
+			border: 1.5px solid $textColor2;
+			margin: 0.75rem 0rem;
 
-            &:focus { 
-                outline: none;
-                border: 2px solid $textColor2; 
-                border-radius: 3px;
-            }
-        }
-    }
+			&:focus {
+				outline: none;
+				border: 2px solid $textColor2;
+				border-radius: 3px;
+			}
+		}
+	}
 
-    .note-body-section {
-        h1 {
-            color: $textColor3;
-            font-weight: 500;
-        } 
+	.note-body-section {
+		h1 {
+			color: $textColor3;
+			font-weight: 500;
+		}
 
-        textarea {
-            width: 100%;  
-            height: 39.5rem;
-            padding: 0.5rem 0.75rem; 
-            font-size: 1.5rem; 
-            font-weight: 400;
-            color: $textColor4; 
-            border: 1.5px solid $textColor2; 
-            margin: 0.75rem 0rem; 
-            resize: none; 
-            margin-right: 3rem;  
+		textarea {
+			width: 100%;
+			height: 39.5rem;
+			padding: 0.5rem 0.75rem;
+			font-size: 1.5rem;
+			font-weight: 400;
+			color: $textColor4;
+			border: 1.5px solid $textColor2;
+			margin: 0.75rem 0rem;
+			resize: none;
+			margin-right: 3rem;
 
-            &:focus { 
-                outline: none;
-                border: 2px solid $textColor2; 
-                border-radius: 3px;
-            }
-        }
-    }
+			&:focus {
+				outline: none;
+				border: 2px solid $textColor2;
+				border-radius: 3px;
+			}
+		}
+	}
 
-    .note-buttons-section {
-        position: absolute;
-        bottom: 3rem; 
-        left: 3rem;
+	.note-buttons-section {
+		position: absolute;
+		bottom: 3rem;
+		left: 3rem;
 
-        button { 
-            border: 1px solid $backgroundColor1; 
-            background-color: $purple1;
-            color: white;
-            padding: 0.5rem 0.8rem;
-            border-radius: 2px; 
-            margin-right: 1.5rem;  
-            cursor: pointer;  
-            box-sizing: border-box; 
-            transition: all 0.2s ease-in-out;
+		button {
+			border: 1px solid $backgroundColor1;
+			background-color: $purple1;
+			color: white;
+			padding: 0.5rem 0.8rem;
+			border-radius: 2px;
+			margin-right: 1.5rem;
+			cursor: pointer;
+			box-sizing: border-box;
+			transition: all 0.2s ease-in-out;
 
-            &:focus {
-                outline: none;
-            } 
-            
-            &:hover {
-                background-color: white;
-                color: $purple2; 
-                border: 1px solid $purple1;
-            }
-        }
-    }
+			&:focus {
+				outline: none;
+			}
+
+			&:hover {
+				background-color: white;
+				color: $purple2;
+				border: 1px solid $purple1;
+			}
+		}
+	}
 }

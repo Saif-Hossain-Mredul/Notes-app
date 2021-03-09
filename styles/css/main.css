@@ -1,71 +1,3 @@
-.header-section {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  background-color: #6A61C0;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 2.5rem;
-  position: fixed;
-  height: 60px;
-  width: 220px;
-}
-
-.header-section span {
-  font-size: 2rem;
-  margin: 0 0.5rem;
-}
-
-.side-bar-section {
-  grid-row: 2/-1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  background-color: #8981D8;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1rem 3rem;
-  width: 220px;
-  position: fixed;
-  top: 60px;
-  bottom: 0px;
-}
-
-.side-bar-section .header__subtitle {
-  font-weight: 300;
-  font-size: 2rem;
-}
-
-.side-bar-section .sidebar-bottom-section .icons {
-  font-size: 1.5rem;
-  margin-bottom: 0.3rem;
-}
-
-.side-bar-section .sidebar-bottom-section .icons a {
-  color: white;
-}
-
-.side-bar-section .sidebar-bottom-section .icons a span {
-  margin: 0 0.3rem;
-}
-
 .search-header {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -120,7 +52,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -140,7 +72,7 @@
 
 .filter-button .dropdown .filter-heading {
   font-size: 1.4rem;
-  background-color: #8981D8;
+  background-color: #8981d8;
   color: white;
   padding: 0.3rem 0.8rem;
   border-radius: 4px;
@@ -150,7 +82,7 @@
 }
 
 .filter-button .dropdown select {
-  border: 1.5px solid #8981D8;
+  border: 1.5px solid #8981d8;
   border-radius: 4px;
   color: #67676e;
 }
@@ -171,7 +103,7 @@
 }
 
 .filter-button .button .icon-container {
-  border: 1px solid #8981D8;
+  border: 1px solid #8981d8;
   border-radius: 200px;
   margin-right: 0.5rem;
   padding: 0.4rem 0.5rem;
@@ -181,7 +113,7 @@
 }
 
 .filter-button .button .icon-container span {
-  color: #8981D8;
+  color: #8981d8;
   font-weight: 100;
   font-size: 0.7rem;
 }
@@ -189,7 +121,7 @@
 .filter-button .button button {
   border: none;
   background-color: transparent;
-  color: #8981D8;
+  color: #8981d8;
   font-weight: 600;
   cursor: pointer;
 }
@@ -206,7 +138,7 @@
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
   padding: 0rem 3rem;
   position: relative;
 }
@@ -305,7 +237,7 @@
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
   padding: 1rem 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,7 +269,7 @@
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
   padding: 1rem 3rem;
   position: relative;
 }
@@ -353,13 +285,13 @@
   font-size: 1.5rem;
   font-weight: 400;
   color: #49494e;
-  border: 1.5px solid #C3C1BE;
+  border: 1.5px solid #c3c1be;
   margin: 0.75rem 0rem;
 }
 
 .edit-body .note-title-section input:focus {
   outline: none;
-  border: 2px solid #C3C1BE;
+  border: 2px solid #c3c1be;
   border-radius: 3px;
 }
 
@@ -375,7 +307,7 @@
   font-size: 1.5rem;
   font-weight: 400;
   color: #49494e;
-  border: 1.5px solid #C3C1BE;
+  border: 1.5px solid #c3c1be;
   margin: 0.75rem 0rem;
   resize: none;
   margin-right: 3rem;
@@ -383,7 +315,7 @@
 
 .edit-body .note-body-section textarea:focus {
   outline: none;
-  border: 2px solid #C3C1BE;
+  border: 2px solid #c3c1be;
   border-radius: 3px;
 }
 
@@ -394,8 +326,8 @@
 }
 
 .edit-body .note-buttons-section button {
-  border: 1px solid #F3F3F4;
-  background-color: #8981D8;
+  border: 1px solid #f3f3f4;
+  background-color: #8981d8;
   color: white;
   padding: 0.5rem 0.8rem;
   border-radius: 2px;
@@ -413,8 +345,8 @@
 
 .edit-body .note-buttons-section button:hover {
   background-color: white;
-  color: #6A61C0;
-  border: 1px solid #8981D8;
+  color: #6a61c0;
+  border: 1px solid #8981d8;
 }
 
 * {
@@ -422,7 +354,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 a {
@@ -441,5 +373,73 @@ html {
       grid-template-columns: 220px 5fr;
   -ms-grid-rows: 60px 60px 1fr;
       grid-template-rows: 60px 60px 1fr;
+}
+
+.body .header-section {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-color: #6a61c0;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2.5rem;
+  position: fixed;
+  height: 60px;
+  width: 220px;
+}
+
+.body .header-section span {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+}
+
+.body .side-bar-section {
+  grid-row: 2/-1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-color: #8981d8;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 3rem;
+  width: 220px;
+  position: fixed;
+  top: 60px;
+  bottom: 0px;
+}
+
+.body .side-bar-section .header__subtitle {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.body .side-bar-section .sidebar-bottom-section .icons {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.body .side-bar-section .sidebar-bottom-section .icons a {
+  color: white;
+}
+
+.body .side-bar-section .sidebar-bottom-section .icons a span {
+  margin: 0 0.3rem;
 }
 /*# sourceMappingURL=main.css.map */

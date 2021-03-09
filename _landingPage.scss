@@ -1,57 +1,5 @@
 @import './constants';
 
-.header-section {
-	grid-row: 1/2;
-	grid-column: 1/2;
-	background-color: $purple2;
-	color: white;
-	display: flex;
-	align-items: center;
-	padding-left: 2.5rem;
-	position: fixed;
-	height: 60px;
-	width: 220px;
-
-	span {
-		font-size: 2rem;
-		margin: 0 0.5rem;
-	}
-}
-
-.side-bar-section {
-	grid-row: 2/-1;
-	grid-column: 1/2;
-	background-color: $purple1;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	padding: 1rem 3rem;
-	width: 220px;
-	position: fixed;
-	top: 60px;
-	bottom: 0px;
-
-	.header__subtitle {
-		font-weight: 300;
-		font-size: 2rem;
-	}
-
-	.sidebar-bottom-section {
-		.icons {
-			font-size: 1.5rem;
-			margin-bottom: 0.3rem;
-
-			a {
-				color: white;
-				span {
-					margin: 0 0.3rem;
-				}
-			}
-		}
-	}
-}
-
 .search-header {
 	grid-column: 2/3;
 	grid-row: 1/2;
@@ -76,8 +24,8 @@
 
 	input {
 		border: none;
-		color: $textColor1; 
-		width: 40rem; 
+		color: $textColor1;
+		width: 40rem;
 
 		&:focus {
 			outline: none;
@@ -118,7 +66,7 @@
 			border: 1.5px solid $purple1;
 			border-radius: 4px;
 			color: $textColor3;
-		} 
+		}
 
 		&:focus {
 			outline: none;
@@ -151,7 +99,7 @@
 			background-color: transparent;
 			color: $purple1;
 			font-weight: 600;
-			cursor: pointer; 
+			cursor: pointer;
 
 			&:focus {
 				outline: none;
@@ -165,12 +113,12 @@
 	grid-column: 2/3;
 	grid-row: 3/4;
 	background-color: $backgroundColor1;
-	padding: 0rem 3rem;  
+	padding: 0rem 3rem;
 	position: relative;
 
 	.empty-message {
 		color: $textColor3;
-		font-size: 3rem;   
+		font-size: 3rem;
 		height: 35rem;
 		display: grid;
 		place-items: center;
